@@ -1,1 +1,9 @@
-{{ vm.data.members }}
+<h2>Total Members: {{ vm.data.members.length }}</h2>
+<h2>Moderators:</h2>
+<ul>
+  <li class="moderators" ng-repeat="member in vm.data.members | modFilter">{{ member.user.username }}</li>
+</ul>
+<h2>Everyone Else:</h2>
+<ul>
+  <li ng-repeat="member in vm.data.members | filterMods">{{ member.user.username }}</li>
+</ul>
