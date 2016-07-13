@@ -15,5 +15,5 @@ app.use(function(req, res, next){
   res.sendFile(path.join(__dirname, 'app_client', 'index.html'));
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 console.log('Server on 3000');
