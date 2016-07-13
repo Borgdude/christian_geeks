@@ -1,2 +1,2 @@
-# Chirstian Geeks Website
-A website for the Chirstian Geeks Discord server
+# Christian Geeks Website
+A website for the Christian Geeks Discord server
