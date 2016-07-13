@@ -15,7 +15,7 @@
     var vm = this;
     var req = {
       method: 'GET',
-      url: "http://localhost:3000/api/members"
+      url: "/api/members"
     };
     $http(req).then(function(response){
       vm.data = { members: response.data }
