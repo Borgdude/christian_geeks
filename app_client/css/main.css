@@ -1,0 +1,35 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+nav {
+  text-align: center;
+}
+.view{
+  margin: 0 15%;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(99, 99, 99, 1);
+  text-align: center;
+}
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li{
+  font-family: sans-serif;
+}
+li a:hover{
+  background-color: rgba(229, 113, 29, 1);
+}
+@media screen and (min-width: 600px) {
+  nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+}
