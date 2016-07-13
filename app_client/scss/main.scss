@@ -1,0 +1,66 @@
+$color1: rgba(99, 99, 99, 1);
+$color2: rgba(229, 113, 29, 1);
+$color3: rgba(209, 209, 209, 1);
+$color4: rgba(219, 219, 219, 1);
+$color5: rgba(133, 199, 242, 1);
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: $color3;
+}
+nav {
+  text-align: center;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: $color1;
+    text-align: center;
+  }
+}
+.contents{
+  font-family: 'Lato';
+}
+.jumbo{
+  background-color: $color4;
+  color: $color2;
+  margin: 0 auto;
+  text-align: center;
+  height: 400px;
+  vertical-align: middle;
+  h1{
+    font-size: 50px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+li{
+  font-family: sans-serif;
+  margin-top: 1rem;
+  a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  &:hover {
+    background-color: $color5;
+  }
+}
+.clear{
+  padding: 10px;
+}
+@media screen and (min-width: 600px) {
+  nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+}
