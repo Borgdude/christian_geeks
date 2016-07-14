@@ -13,7 +13,7 @@ $color5: rgba(133, 199, 242, 1);
 body{
   margin: 0;
   padding: 0;
-  background-color: $color3;
+  background-color: $color4;
 }
 nav {
   text-align: center;
@@ -29,7 +29,7 @@ nav {
   font-family: 'Lato';
 }
 .jumbo{
-  background-color: $color4;
+  background-color: $color3;
   color: $color2;
   margin: 0 auto;
   text-align: center;
@@ -50,13 +50,22 @@ li{
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  &:hover {
-    background-color: $color5;
+    &:hover {
+      background-color: $color5;
+      color: white;
+    }
   }
 }
 .clear{
   padding: 10px;
+}
+.siteImg {
+  width: 150px;
+}
+.center{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 @media screen and (min-width: 600px) {
   nav li {

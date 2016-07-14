@@ -16,6 +16,11 @@
         controllerAs: 'vm',
         controller: 'memberCtrl'
       })
+      .when('/sites', {
+        templateUrl: '/templates/sites.view.html',
+        controllerAs: 'vm',
+        controller: 'sitesCtrl'
+      })
       .otherwise({redirectTo: '/'});
 
     $locationProvider.html5Mode({
