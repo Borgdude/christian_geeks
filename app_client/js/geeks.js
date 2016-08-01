@@ -1,6 +1,6 @@
 (function(){
   angular
-    .module('christianGeeks', ['ngRoute'])
+    .module('christianGeeks', ['ngRoute', 'ngAnimate'])
     .config(['$routeProvider', '$locationProvider', config]);
 
   function config ($routeProvider, $locationProvider){
