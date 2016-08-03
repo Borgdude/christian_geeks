@@ -12,7 +12,7 @@
       },
       "facebook" : {
         "img" : "imgs/facebook.png",
-        "url" :"http://www.facebook.com"
+        "url" : "https://www.facebook.com/groups/631957640300243"
       },
       "discord" : {
         "img" : "imgs/discord.png",

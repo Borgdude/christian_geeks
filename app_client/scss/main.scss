@@ -14,13 +14,12 @@ body{
   margin: 0;
   padding: 0;
   background-color: $color3;
-  color: $color2;
   font-family: 'Lato';
+  overflow-x: hidden;
 }
 nav {
   text-align: center;
   background-color: $color4;
-  padding: 10px 20px 0 20px;
   overflow: hidden;
   ul {
     list-style: none;
@@ -29,15 +28,31 @@ nav {
     text-align: center;
     display: inline-block;
     float: right;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    li{
+      margin: 10px 0;
+      a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        &:hover {
+          background-color: $color5;
+          color: white;
+        }
+      }
+    }
   }
   h1{
     float: left;
     font-size: 3rem;
+    margin: 10px 0;
     a{
       color: white;
       text-decoration: none;
       &:hover {
-        color: $color2;
+        color: $color5;
       }
     }
   }
@@ -57,19 +72,7 @@ nav {
     font-size: 20px;
   }
 }
-li{
-  font-family: sans-serif;
-  margin-top: 1rem;
-  a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    &:hover {
-      background-color: $color2;
-      color: white;
-    }
-  }
-}
+
 .clear{
   padding: 10px;
 }
@@ -84,30 +87,52 @@ li{
 .brand {
   font-size: 4rem;
 }
-@media screen and (min-width: 600px) {
+.slide {
+  position: absolute;
+  width: 100%;
+}
+.slide.ng-enter,
+.slide.ng-leave {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.slide.ng-enter {
+  left: 100%;
+}
+.slide.ng-enter-active {
+  left: 0;
+}
+.slide.ng-leave {
+  left: 0;
+}
+.slide.ng-leave-active {
+  left: -100%;
+}
+@media screen and (min-width: 700px) {
   nav li {
     display: inline-block;
     margin-right: -4px;
   }
 }
-.slide {
-    position: absolute;
-    width: 100%;
-}
-.slide.ng-enter,
-.slide.ng-leave {
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
-}
-.slide.ng-enter {
-    left: 100%;
-}
-.slide.ng-enter-active {
-    left: 0;
-}
-.slide.ng-leave {
-    left: 0;
-}
-.slide.ng-leave-active {
-    left: -100%;
+.joinbtn{
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: white;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: $color5;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  &:hover{
+    color: white;
+    background-color: rgb(152, 64, 64);
+  }
 }
