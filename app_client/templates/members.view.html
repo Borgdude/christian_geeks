@@ -1,16 +1,16 @@
 <div class="container">
   <div class="clear"></div>
   <h2 class="center">Total Members: {{ vm.data.members.length }}</h2>
+  <div class="clear"></div>
   <h4 class="center" >Moderators:</h4>
   <div class="clear"></div>
   <div class="row">
-    <h5 class="center moderators one-third column" ng-repeat="member in vm.data.members | modFilter">{{ member.user.username }}</h5>
+    <h5 class="col-md-4 col-sm-6 col-xs-12 center" style="font-size: 20px;"ng-repeat="member in vm.data.members | modFilter">{{ member.user.username }}</h5>
   </div>
   <div class="clear"></div>
   <h4 class="center">Everyone Else:</h4>
   <div class="clear"></div>
   <div class="row">
-    <p class="three columns" ng-repeat="member in vm.data.members | filterMods track by $index">{{ member.user.username }}</p>
+    <p class="col-md-3 col-sm-4 col-xs-6 center" style="font-size: 16px;"ng-repeat="member in vm.data.members | filterMods track by $index">{{ member.user.username }}</p>
   </div>
-</div>
 </div>

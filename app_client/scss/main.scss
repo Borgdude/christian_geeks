@@ -16,6 +16,7 @@ body{
   background-color: $color3;
   font-family: 'Lato';
   overflow-x: hidden;
+  color: white;
 }
 nav {
   text-align: center;
@@ -27,12 +28,11 @@ nav {
     padding: 0;
     text-align: center;
     display: inline-block;
-    float: right;
     font-weight: 600;
     line-height: 38px;
     letter-spacing: .1rem;
     li{
-      margin: 10px 0;
+    //  margin: 10px 0;
       a {
         color: white;
         padding: 14px 16px;
@@ -45,9 +45,9 @@ nav {
     }
   }
   h1{
-    float: left;
-    font-size: 3rem;
-    margin: 10px 0;
+    // float: left;
+    // font-size: 3rem;
+    // margin: 10px 0;
     a{
       color: white;
       text-decoration: none;
@@ -57,8 +57,11 @@ nav {
     }
   }
 }
-.contents{
-
+h2 {
+  font-size: 35px;
+}
+h4 {
+  font-size: 25px;
 }
 .jumbo{
   margin: 20px auto;
@@ -108,12 +111,6 @@ nav {
 .slide.ng-leave-active {
   left: -100%;
 }
-@media screen and (min-width: 700px) {
-  nav li {
-    display: inline-block;
-    margin-right: -4px;
-  }
-}
 .joinbtn{
   display: inline-block;
   height: 38px;
@@ -134,5 +131,28 @@ nav {
   &:hover{
     color: white;
     background-color: rgb(152, 64, 64);
+    text-decoration: none;
   }
+}
+.navbar-brand{
+  font-size: 30px;
+  color: white;
+  &:hover{
+    color: $color5;
+  }
+}
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: $color5;
+}
+.icon-bar {
+  background-color: white;
+}
+.navbar-toggle {
+  border-color: $color5;
+}
+.navbar-toggle:focus, .navbar-toggle:hover {
+  background-color: $color5;
+}
+.aboutSection {
+  font-size: 25px;
 }
